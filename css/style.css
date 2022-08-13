@@ -1,0 +1,117 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+img {
+    vertical-align: middle;
+    border: 0;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Noto Sans KR', Helvetica, '맑은 고딕', 'malgun gothic', 'Apple SD Gothic Neo', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.4;
+    letter-spacing: -0.64px;
+    color: #444;
+}
+
+/* 안내창 */
+.modal-wrap {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 99999;
+}
+
+.fa {
+    position: absolute;
+    display: block;
+    top: 24%;
+    right: 37%;
+    font-size: 130px;
+    color: rgba(250, 19, 19, 0.1);
+    z-index: -9;
+}
+
+.modal-main {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 570px;
+    height: 220px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0px 0px 15px 0px rgba(207, 174, 197, 0.212);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.modal-main h1 {
+    font-size: 25px;
+    font-weight: 500;
+    text-align: center;
+    color: #555;
+    padding-top: 10px;
+}
+
+.modal-main p {
+    text-align: left;
+    font-size: 16px;
+    font-weight: 300;
+    color: #333;
+    line-height: 1.8;
+    padding: 20px;
+}
+
+.modal-main b {
+    font-weight: 600;
+    color: #ff4a50;
+}
+
+.modal-main strong {
+    font-weight: 500;
+    font-size: 17px;
+    padding: 2px;
+    line-height: 16px;
+}
+
+.modal-close {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    right: 16px;
+    top: 16px;
+    border: 0;
+    cursor: pointer;
+    background: url('../images/cancel.png') no-repeat center;
+    background-size: cover;
+    transition: transform 0.5s;
+}
+
+.modal-close:hover {
+    transform: rotate(90deg);
+}
