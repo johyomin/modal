@@ -72,7 +72,7 @@ body {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    width: 610px;
+    width: 615px;
     height: 350px;
     background-color: #fff;
     border-radius: 10px;
@@ -131,9 +131,9 @@ body {
 .modal-text-box {
     position: relative;
     display: block;
-    margin-top: 20px;
+    margin: 10px 0;
     padding: 10px;
     border-radius: 10px;
-    border: 1px solid rgb(230, 199, 193, 30%);
-    box-shadow: rgb(230 199 193) 2px 2px 1px 1px;
+    border: 2px solid rgb(230, 199, 193);
+    /* box-shadow: rgb(230 199 193) 2px 2px 1px 1px; */
 }
